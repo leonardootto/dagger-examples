@@ -37,7 +37,6 @@ interface ProgrammerComponent {
 
 fun main(){
     val programmerComponent = DaggerProgrammerComponent.builder()
-        .myModule(MyModule())
         .build();
 
     val programmer = programmerComponent.createProgrammer()
